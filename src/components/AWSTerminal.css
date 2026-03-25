@@ -1,0 +1,328 @@
+.terminal-container.aws-terminal {
+  width: 100%;
+  height: 400px;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid #333333;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.terminal-container.aws-terminal.fullscreen {
+  height: 100%;
+  min-height: 600px;
+  border-radius: 0;
+  border: none;
+}
+
+.aws-terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: linear-gradient(90deg, #ff9900, #ff6600);
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  border-bottom: 1px solid #ff9900;
+}
+
+.aws-terminal-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aws-icon {
+  font-size: 16px;
+}
+
+.aws-terminal-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.aws-terminal-content {
+  height: calc(100% - 40px);
+  background: rgba(0, 0, 0, 0.95);
+  color: #ffffff;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.aws-terminal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.aws-terminal-content::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.aws-terminal-content::-webkit-scrollbar-thumb {
+  background: rgba(255, 153, 0, 0.6);
+  border-radius: 4px;
+}
+
+.aws-terminal-content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 153, 0, 0.8);
+}
+
+.terminal-line {
+  margin-bottom: 4px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.terminal-prompt {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.terminal-command {
+  color: #ffffff;
+}
+
+.terminal-output {
+  color: #cccccc;
+}
+
+.terminal-error {
+  color: #ef4444;
+}
+
+.terminal-success {
+  color: #22c55e;
+}
+
+.terminal-warning {
+  color: #f59e0b;
+}
+
+.terminal-info {
+  color: #3b82f6;
+}
+
+.aws-command {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.aws-region {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.aws-service {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.aws-resource {
+  color: #f59e0b;
+}
+
+.aws-arn {
+  color: #a855f7;
+  font-style: italic;
+}
+
+.aws-tag {
+  color: #06b6d4;
+}
+
+.aws-json {
+  color: #cccccc;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+.aws-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.aws-table th,
+.aws-table td {
+  border: 1px solid #333333;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+.aws-table th {
+  background: rgba(255, 153, 0, 0.1);
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.aws-table td {
+  color: #cccccc;
+}
+
+.aws-help-section {
+  margin: 16px 0;
+  padding: 12px;
+  background: rgba(255, 153, 0, 0.05);
+  border-left: 4px solid #ff9900;
+  border-radius: 4px;
+}
+
+.aws-help-section h3 {
+  color: #ff9900;
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.aws-help-section p {
+  color: #cccccc;
+  margin: 4px 0;
+  line-height: 1.4;
+}
+
+.aws-help-section code {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: #ff9900;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+.aws-help-section ul {
+  margin: 8px 0;
+  padding-left: 20px;
+}
+
+.aws-help-section li {
+  color: #cccccc;
+  margin: 4px 0;
+}
+
+.aws-help-section .required {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.aws-help-section .optional {
+  color: #f59e0b;
+}
+
+.aws-help-section .example {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 8px 0;
+  border-left: 3px solid #22c55e;
+}
+
+.aws-help-section .example-title {
+  color: #22c55e;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.aws-help-section .example-code {
+  color: #ffffff;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+.terminal-typing {
+  border-right: 2px solid #ff9900;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: #ff9900; }
+  51%, 100% { border-color: transparent; }
+}
+
+.terminal-loading {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(255, 153, 0, 0.3);
+  border-top: 2px solid #ff9900;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.terminal-cursor {
+  background: #ff9900;
+  color: #000;
+  animation: blink 1s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aws-terminal-header {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .aws-terminal-content {
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  .aws-terminal-status {
+    font-size: 10px;
+  }
+  
+  .status-indicator {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .aws-table {
+    font-size: 12px;
+  }
+  
+  .aws-table th,
+  .aws-table td {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aws-terminal-header {
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+  }
+  
+  .aws-terminal-title,
+  .aws-terminal-status {
+    justify-content: center;
+  }
+  
+  .aws-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

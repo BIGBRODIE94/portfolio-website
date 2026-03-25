@@ -1,0 +1,402 @@
+.intro-container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.profile-image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #333333;
+  animation: rotate 15s linear infinite;
+  opacity: 0.6;
+}
+
+.profile-ring::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  border: 1px solid #555555;
+  animation: rotate 10s linear infinite reverse;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.profile-image {
+  position: relative;
+  z-index: 2;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #333333;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: #1a1a1a;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-stack {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid #333333;
+}
+
+.tech-stack h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #cccccc;
+  transition: all 0.3s ease;
+  border: 1px solid #333333;
+}
+
+.tech-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  border-color: #555555;
+}
+
+.tech-icon svg {
+  font-size: 2rem;
+  color: #ff9900;
+}
+
+.tech-icon span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.intro-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro-header {
+  text-align: left;
+}
+
+.intro-header h1 {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.typing-container {
+  margin-top: 0.5rem;
+}
+
+.typing-text {
+  font-size: 1.5rem;
+  color: #ff9900;
+  font-weight: 600;
+  margin: 0;
+  min-height: 2rem;
+}
+
+.cursor {
+  color: #cccccc;
+  font-weight: 400;
+  animation: blink 1s infinite;
+}
+
+.cursor.visible {
+  opacity: 1;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.intro-description {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid #333333;
+}
+
+.terminal-output {
+  margin-bottom: 1rem;
+}
+
+.prompt {
+  color: #ff9900;
+  font-weight: 600;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+.about-content {
+  color: #cccccc;
+  line-height: 1.7;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.skill-category {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333333;
+}
+
+.skill-category h4 {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-category li {
+  color: #cccccc;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skill-category li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  text-decoration: none;
+  color: #cccccc;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333333;
+  backdrop-filter: blur(10px);
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
+  border-color: #555555;
+  color: #ffffff;
+}
+
+.social-link.github:hover {
+  background: rgba(36, 41, 46, 0.9);
+  border-color: #586069;
+}
+
+.social-link.linkedin:hover {
+  background: rgba(0, 119, 181, 0.9);
+  border-color: #0077b5;
+}
+
+.social-link.email:hover {
+  background: rgba(118, 75, 162, 0.9);
+  border-color: #764ba2;
+}
+
+.social-link svg {
+  font-size: 1.2rem;
+}
+
+.social-link.github svg {
+  color: #f0f6fc;
+}
+
+.social-link.linkedin svg {
+  color: #0077b5;
+}
+
+.social-link.email svg {
+  color: #764ba2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .intro-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .intro-left {
+    order: 2;
+  }
+  
+  .intro-right {
+    order: 1;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-container {
+    padding: 1rem 0;
+  }
+  
+  .intro-content {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .intro-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .typing-text {
+    font-size: 1.2rem;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-ring {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .tech-icons {
+    grid-template-columns: 1fr;
+  }
+  
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-link {
+    width: 100%;
+    max-width: 200px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-header h1 {
+    font-size: 2rem;
+  }
+  
+  .typing-text {
+    font-size: 1rem;
+  }
+  
+  .intro-description {
+    padding: 1.5rem;
+  }
+  
+  .skill-category {
+    padding: 1rem;
+  }
+  
+  .tech-stack {
+    padding: 1rem;
+  }
+}
