@@ -10,9 +10,9 @@ const Skills = () => {
       icon: '☁️',
       skills: [
         { name: 'AWS', level: 95, description: 'EC2, S3, ECS, EKS, Lambda, CloudWatch, Kinesis, IAM, VPC, CloudFormation' },
-        { name: 'AWS GovCloud', level: 90, description: 'Government cloud compliance, FedRAMP, DoD requirements, secure deployments' },
-        { name: 'CloudFormation & CDK', level: 88, description: 'Infrastructure as Code, nested stacks, custom resources, AWS CDK' },
-        { name: 'Multi-Account Architecture', level: 92, description: 'Cross-account IAM, Organizations, centralized logging, security frameworks' }
+        { name: 'Azure', level: 90, description: 'Management Groups, Subscription Landing Zones, Azure SDK, Service Principals, Azure CLI' },
+        { name: 'AWS GovCloud', level: 88, description: 'Government cloud compliance, FedRAMP, DoD requirements, secure deployments' },
+        { name: 'Multi-Cloud Architecture', level: 92, description: 'Cross-cloud IAM, Organizations, centralized logging, security frameworks, Temporal orchestration' }
       ]
     },
     containers: {

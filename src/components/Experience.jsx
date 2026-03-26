@@ -4,11 +4,28 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
+      title: "Senior Multi-Cloud Engineer",
+      company: "PricewaterhouseCoopers (PwC)",
+      period: "Jan 2026 - Present",
+      location: "Remote",
+      description: "Leading enterprise-scale Azure subscription migration automation and internal developer platform engineering for one of the Big Four consulting firms.",
+      achievements: [
+        "Architected an automated Azure Subscription Migration Framework using Temporal orchestration engine, replacing manual processes with fault-tolerant, auditable workflows that resume from exact failure points",
+        "Designed and implemented Azure Management Group hierarchies and subscription landing zone automation using Python and Azure SDK, enabling programmatic provisioning across hundreds of subscriptions",
+        "Integrated Port internal developer portal APIs for self-service infrastructure actions, building CI/CD pipelines for seamless team onboarding and resource group management",
+        "Authored comprehensive SOP documentation for the Cloud Core Upgrade Playbook, defining subscription upgrade workflows, readiness checklists, and fail-forward error handling procedures",
+        "Implemented least-privilege Service Principal security model with scoped Management Group Contributor and Owner role assignments, satisfying PwC enterprise security standards",
+        "Coordinated cross-functional QA integration testing across dev, staging, and production environments for subscription upgrade workflows with automated regression testing"
+      ],
+      technologies: ["Azure", "Temporal", "Python", "Azure SDK", "Port", "CI/CD", "Management Groups", "Subscription Landing Zones", "Service Principals", "IAM", "Azure CLI"],
+      impact: "Automated enterprise Azure subscription migrations replacing manual multi-day processes, enabling scalable cloud governance across hundreds of subscriptions"
+    },
+    {
       title: "Cloud Engineer",
       company: "Strategic Business Systems - COSMOS Engineering",
-      period: "July 2025 - Present",
+      period: "Jul 2025 - Dec 2025",
       location: "On-Site",
-      description: "Building and maintaining CI/CD pipelines and establishing comprehensive security and compliance frameworks for mission-critical applications.",
+      description: "Built and maintained CI/CD pipelines and established comprehensive security and compliance frameworks for mission-critical government applications.",
       achievements: [
         "Built and maintained CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy, reducing deployment time by 75% and enabling automated testing and rollback capabilities for mission-critical applications",
         "Implemented end-to-end CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy with Wiz security scanning integration, reducing deployment time by 75% while ensuring automated security validation and compliance checks throughout the development lifecycle",
@@ -67,6 +84,13 @@ const Experience = () => {
   ];
 
   const projects = [
+    {
+      title: "Azure Subscription Migration Automation",
+      description: "Enterprise-grade Temporal-orchestrated framework for automated Azure subscription migration with fault-tolerant workflows, Management Group provisioning, and Port developer portal integration",
+      technologies: ["Azure", "Temporal", "Python", "Azure SDK", "Port API", "Service Principals", "CI/CD"],
+      status: "Production",
+      impact: "Replaced manual multi-day subscription migrations with automated, auditable workflows across hundreds of enterprise subscriptions"
+    },
     {
       title: "Self-Healing Infrastructure Framework",
       description: "AWS CloudFormation and CI/CD pipeline automation for automated error remediation and incident response",

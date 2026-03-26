@@ -5,7 +5,7 @@ import { SiKubernetes, SiTerraform } from 'react-icons/si'
 
 const Introduction = () => {
   const [text, setText] = useState('')
-  const fullText = 'Cloud Engineer & AWS Solutions Architect'
+  const fullText = 'Senior Multi-Cloud Engineer & Solutions Architect'
   const [showCursor, setShowCursor] = useState(true)
 
   useEffect(() => {
@@ -80,18 +80,19 @@ const Introduction = () => {
             </p>
             <div className="about-content">
               <p>
-                Passionate Cloud Engineer specializing in AWS infrastructure, automation, 
-                and DevOps practices. Expert in designing scalable, secure, and cost-effective 
-                cloud solutions that drive business transformation.
+                Senior Multi-Cloud Engineer at PwC, specializing in AWS and Azure infrastructure, 
+                automation, and DevOps practices. Expert in designing scalable, secure, and cost-effective 
+                cloud solutions that drive enterprise business transformation.
               </p>
               <p>
-                With extensive experience in AWS services including EC2, S3, ECS, EKS, Lambda, 
-                and CloudFormation, I build robust cloud architectures that power modern applications.
+                With extensive experience across AWS (EC2, S3, ECS, EKS, Lambda, CloudFormation) 
+                and Azure (Management Groups, Subscription Landing Zones, Azure SDK), I build 
+                robust multi-cloud architectures that power modern applications.
               </p>
               <p>
-                Currently working on COSMOS Engineering projects, implementing enterprise-grade 
-                centralized logging, security compliance, and infrastructure automation for 
-                government cloud environments.
+                Currently leading Azure subscription migration automation at PwC, building 
+                Temporal-orchestrated workflows, developer portal integrations, and enterprise-grade 
+                cloud governance frameworks.
               </p>
             </div>
 
