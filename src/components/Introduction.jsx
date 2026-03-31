@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import './Introduction.css'
-import { FaAws, FaDocker, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
-import { SiKubernetes, SiTerraform } from 'react-icons/si'
+import { FaAws, FaDocker, FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { SiKubernetes, SiTerraform, SiMicrosoftazure } from 'react-icons/si'
 
 const Introduction = () => {
   const [text, setText] = useState('')
-  const fullText = 'Senior Multi-Cloud Engineer & Solutions Architect'
+  const fullText = 'Sr. Cloud Engineer – DevEx'
   const [showCursor, setShowCursor] = useState(true)
 
   useEffect(() => {
@@ -47,6 +47,10 @@ const Introduction = () => {
                 <FaAws />
                 <span>AWS</span>
               </a>
+              <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className="tech-icon azure">
+                <SiMicrosoftazure />
+                <span>Azure</span>
+              </a>
               <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" className="tech-icon docker">
                 <FaDocker />
                 <span>Docker</span>
@@ -72,6 +76,7 @@ const Introduction = () => {
                 <span className={`cursor ${showCursor ? 'visible' : ''}`}>|</span>
               </h2>
             </div>
+            <p className="location-info">New York, NY</p>
           </div>
 
           <div className="intro-description">
@@ -80,19 +85,18 @@ const Introduction = () => {
             </p>
             <div className="about-content">
               <p>
-                Senior Multi-Cloud Engineer at PwC, specializing in AWS and Azure infrastructure, 
-                automation, and DevOps practices. Expert in designing scalable, secure, and cost-effective 
-                cloud solutions that drive enterprise business transformation.
+                Sr. Cloud Engineer at PwC, specializing in AWS and Azure cloud migration automation,
+                developer experience platforms, and enterprise-grade governance frameworks. Expert in 
+                building scalable, secure, and cost-effective multi-cloud solutions.
               </p>
               <p>
-                With extensive experience across AWS (EC2, S3, ECS, EKS, Lambda, CloudFormation) 
-                and Azure (Management Groups, Subscription Landing Zones, Azure SDK), I build 
-                robust multi-cloud architectures that power modern applications.
+                Currently automating Azure subscription migrations across 500+ subscriptions and 57,000+ 
+                cloud resources using Temporal orchestration, Python, and Azure SDK — reducing migration 
+                time from 3 days to under 10 seconds per subscription.
               </p>
               <p>
-                Currently leading Azure subscription migration automation at PwC, building 
-                Temporal-orchestrated workflows, developer portal integrations, and enterprise-grade 
-                cloud governance frameworks.
+                Previously at AWS, Amazon Web Services, and multiple enterprise clients including 
+                Bank of America and Bell Flight, with deep expertise across the full cloud stack.
               </p>
             </div>
 
@@ -101,35 +105,35 @@ const Introduction = () => {
                 <h4>☁️ Cloud Platforms</h4>
                 <ul>
                   <li>AWS (EC2, S3, ECS, EKS, Lambda)</li>
-                  <li>AWS GovCloud</li>
-                  <li>CloudFormation & CDK</li>
+                  <li>Azure (SDK, Management Groups, Entra ID)</li>
+                  <li>GCP (Cloud Functions, GKE)</li>
                 </ul>
               </div>
               
               <div className="skill-category">
-                <h4>🔧 DevOps Tools</h4>
+                <h4>🔧 DevOps & IaC</h4>
                 <ul>
-                  <li>Docker & Kubernetes</li>
-                  <li>Terraform & Ansible</li>
-                  <li>CI/CD (Jenkins, GitLab)</li>
+                  <li>Terraform, CloudFormation, CDK</li>
+                  <li>Docker, Kubernetes, Helm</li>
+                  <li>CI/CD (Jenkins, GitLab, ArgoCD)</li>
                 </ul>
               </div>
 
               <div className="skill-category">
                 <h4>🛡️ Security & Compliance</h4>
                 <ul>
-                  <li>IAM & Security Groups</li>
-                  <li>CloudTrail & CloudWatch</li>
-                  <li>Wiz Security Integration</li>
+                  <li>FISMA, NIST, DoD, SOC 2, FedRAMP</li>
+                  <li>IAM, Wiz, RegScale, Netskope</li>
+                  <li>Azure Policy, RBAC, Key Vault</li>
                 </ul>
               </div>
 
               <div className="skill-category">
                 <h4>💻 Programming</h4>
                 <ul>
-                  <li>Python & Bash</li>
-                  <li>JavaScript/Node.js</li>
-                  <li>Infrastructure as Code</li>
+                  <li>Python, Bash, JavaScript, TypeScript</li>
+                  <li>C, C#, C++, Java, Go</li>
+                  <li>ReactJS, AngularJS, Node.js</li>
                 </ul>
               </div>
             </div>
@@ -153,4 +157,3 @@ const Introduction = () => {
 }
 
 export default Introduction
-

@@ -4,36 +4,55 @@ import './Experience.css';
 const Experience = () => {
   const experiences = [
     {
-      title: "Senior Multi-Cloud Engineer",
+      title: "Sr. Cloud Engineer – DevEx",
       company: "PricewaterhouseCoopers (PwC)",
-      period: "Jan 2026 - Present",
-      location: "Remote",
-      description: "Leading enterprise-scale Azure subscription migration automation and internal developer platform engineering for one of the Big Four consulting firms.",
+      period: "Dec 2025 - Present",
+      location: "Hybrid",
+      description: "Leading Azure cloud migration automation, policy compliance engineering, and developer experience platform integration for enterprise clients.",
       achievements: [
-        "Architected an automated Azure Subscription Migration Framework using Temporal orchestration engine, replacing manual processes with fault-tolerant, auditable workflows that resume from exact failure points",
-        "Designed and implemented Azure Management Group hierarchies and subscription landing zone automation using Python and Azure SDK, enabling programmatic provisioning across hundreds of subscriptions",
-        "Integrated Port internal developer portal APIs for self-service infrastructure actions, building CI/CD pipelines for seamless team onboarding and resource group management",
-        "Authored comprehensive SOP documentation for the Cloud Core Upgrade Playbook, defining subscription upgrade workflows, readiness checklists, and fail-forward error handling procedures",
-        "Implemented least-privilege Service Principal security model with scoped Management Group Contributor and Owner role assignments, satisfying PwC enterprise security standards",
-        "Coordinated cross-functional QA integration testing across dev, staging, and production environments for subscription upgrade workflows with automated regression testing"
+        "Architected and developed an end-to-end Azure Cloud Migration Automation Platform using Python, Temporal Workflow Orchestration, and Azure SDK, automating subscription migrations from legacy NGC to CloudCore across 500+ subscriptions and 57,000+ cloud resources, reducing per-subscription migration time from 3 days to under 10 seconds — a 99.9% reduction in manual effort",
+        "Engineered a Policy Compliance & Exemption Engine that programmatically detects Audit-to-Deny policy shifts, auto-generates ARM-compliant Azure Policy Exemptions, and applies 184+ resource-level exemptions per migration cycle via Azure REST APIs, integrating with ServiceNow ITSM for automated RITM ticket creation and ensuring zero compliance gaps during migration",
+        "Designed and implemented Temporal-based microservices workflows with multi-identity Service Principal (SPN) authentication, pre-migration tag drift validation, Management Group hierarchy traversal, and post-migration compliance verification — supporting multiple compliance boundaries (USTAX, Standard Engineering) and generating structured audit trail reports for enterprise governance review",
+        "Built an automated Azure Landing Zone Registration System and Cloud Access Group (CAG) Generator that maps 47+ subnets across VNets to logical environments (Dev/QA/Stage/Prod), provisions Entra ID RBAC groups with role-mapping from legacy to approved CloudCore roles, and registers environments via the DevEx Platform API — eliminating manual onboarding and enabling scalable, repeatable infrastructure provisioning",
+        "Delivered a full-stack cloud governance automation suite integrating Azure Policy Insights, Cosmos DB, Azure Key Vault, Resource Graph API, and Docker-containerized Temporal workers, processing 690+ policy differences and 98 RBAC assignments per application, with dry-run simulation models, batch parallel processing on Azure DevOps"
       ],
-      technologies: ["Azure", "Temporal", "Python", "Azure SDK", "Port", "CI/CD", "Management Groups", "Subscription Landing Zones", "Service Principals", "IAM", "Azure CLI"],
-      impact: "Automated enterprise Azure subscription migrations replacing manual multi-day processes, enabling scalable cloud governance across hundreds of subscriptions"
+      technologies: ["Azure", "Python", "Temporal", "Azure SDK", "Azure REST APIs", "ServiceNow", "Cosmos DB", "Key Vault", "Resource Graph API", "Docker", "Azure DevOps", "Entra ID", "RBAC"],
+      impact: "Reduced per-subscription migration time from 3 days to under 10 seconds across 500+ subscriptions and 57,000+ cloud resources"
+    },
+    {
+      title: "Synthetic Data Engineer",
+      company: "Sepal AI",
+      period: "Dec 2025 - Present",
+      location: "Remote",
+      description: "Architecting observability evaluation infrastructure and AIOps datasets for AI-driven incident response testing and root cause analysis.",
+      achievements: [
+        "Architected observability evaluation infrastructure (ClickHouse, Grafana, Docker-in-Docker) with 3-tier grading system processing 200+ problem definitions across 27 real-world incidents; automated TAIGA/Jinja2/MCP workflow testing 7 incident types (network latency, JVM OOM, CPU saturation, cascading failures) with 100% deterministic accuracy and semantic similarity validation",
+        "Implemented intelligent grading system with 3-tier criterion validation (deterministic matching at 100% accuracy, semantic similarity with 0.7 threshold, temporal tolerance of ±60 seconds) processing timestamp, component IDs, and root cause descriptions across 20+ problem definitions",
+        "Automated end-to-end evaluation workflow using TAIGA framework, Jinja2 templates, and MCP protocol, orchestrating Docker images with custom startup commands and resource constraints (4 vCPU + 16 GiB) for scalable DevOps AI testing",
+        "Delivered comprehensive RCA dataset covering 7 incident types (network latency, memory exhaustion, JVM OOM, CPU saturation, I/O bottlenecks, connection pool limits, cascading failures) with quantifiable metrics and chronological timeline analysis",
+        "Engineered AIOps observability infrastructure generating 36.1M-row dataset across 72-hour simulation of 18-microservice application (Kubernetes, Helm, Chaos Mesh, Prometheus, Jaeger, MongoDB); implemented cascading failures, resource contention, and automated fault injection (wrk2) with 15-second metric granularity across logs, traces, and metrics"
+      ],
+      technologies: ["ClickHouse", "Grafana", "Docker", "Kubernetes", "Helm", "Chaos Mesh", "Prometheus", "Jaeger", "MongoDB", "TAIGA", "Jinja2", "MCP", "Python"],
+      impact: "Generated 36.1M-row AIOps dataset with 100% deterministic accuracy across 27 real-world incident scenarios"
     },
     {
       title: "Cloud Engineer",
-      company: "Strategic Business Systems - COSMOS Engineering",
-      period: "Jul 2025 - Dec 2025",
+      company: "Strategic Business Systems",
+      period: "Jul 2025 - Nov 2025",
       location: "On-Site",
-      description: "Built and maintained CI/CD pipelines and established comprehensive security and compliance frameworks for mission-critical government applications.",
+      description: "Built GitOps-driven CI/CD pipelines, established cloud security frameworks, and deployed HPC infrastructure for mission-critical government applications.",
       achievements: [
-        "Built and maintained CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy, reducing deployment time by 75% and enabling automated testing and rollback capabilities for mission-critical applications",
-        "Implemented end-to-end CI/CD pipelines using AWS CodePipeline, CodeBuild, and CodeDeploy with Wiz security scanning integration, reducing deployment time by 75% while ensuring automated security validation and compliance checks throughout the development lifecycle",
-        "Established comprehensive security and compliance frameworks using CloudWatch, CloudTrail, RegScale for automated governance and risk management, and Netskope for cloud security monitoring",
-        "Ensured 99.9% uptime and adherence to government security standards including FISMA, NIST, and DoD compliance requirements"
+        "Built and maintained GitOps-driven CI/CD pipelines (AWS CodePipeline, CodeBuild, CodeDeploy, ArgoCD, Flux) with integrated Wiz security scanning, reducing deployment time by 75% and ensuring automated compliance validation",
+        "Established cloud security & compliance frameworks (CloudWatch, CloudTrail, RegScale, Netskope, Wiz), achieving 99.9% uptime and adherence to FISMA, NIST, and DoD standards",
+        "Deployed AWS Parallel Cluster with Terraform and FSx for Lustre/S3, cutting HPC setup time by 60% across 10+ research pipelines, ensuring reproducible clusters via IaC",
+        "Automated Slurm job scheduling with Python/Bash, reducing manual management by 70%, boosting cluster utilization by 35%, and integrating performance metrics into CloudWatch/Grafana dashboards for observability",
+        "Restructured and automated 10+ VDMS/VDSS security playbooks, enabling rapid incident response and remediation across all cloud environments; playbooks were used by 15+ cloud engineers",
+        "Transformed Landing Zone Accelerator (LZA) in test environments, enhancing cloud security automation, reducing configuration errors by 30%, and improving scalability through advanced configuration patterns",
+        "Leveraged serverless architectures (Lambda, SAM, and EventBridge) to automate compliance workflows and monitoring, reducing manual audit tasks by 40%",
+        "Designed multi-cloud integration pipelines (AWS + GCP) with Terraform and Jenkins, reducing deployment durations by 55% and cutting configuration errors by 45%"
       ],
-      technologies: ["AWS", "CodePipeline", "CodeBuild", "CodeDeploy", "CloudWatch", "CloudTrail", "Wiz", "RegScale", "Netskope", "FISMA", "NIST", "DoD"],
-      impact: "Reduced deployment time by 75% while ensuring 99.9% uptime and full compliance with government security standards"
+      technologies: ["AWS", "CodePipeline", "CodeBuild", "CodeDeploy", "ArgoCD", "Flux", "Wiz", "Terraform", "Parallel Cluster", "FSx", "Slurm", "Lambda", "SAM", "EventBridge", "RegScale", "Netskope"],
+      impact: "Reduced deployment time by 75%, cut HPC setup time by 60%, and ensured 99.9% uptime with full FISMA/NIST/DoD compliance"
     },
     {
       title: "AWS Cloud Engineer",
@@ -45,7 +64,7 @@ const Experience = () => {
         "Deployed self-healing infrastructure using AWS CloudFormation and CI/CD pipelines to remediate errors, decreasing mean time to repair (MTTR) by 30% and saving over 200 hours monthly",
         "Restructured a Python-driven internal automation framework with AWS CDK, CloudFormation, and CI/CD integration to auto diagnose and remediate production infrastructure, saving 200 developer-hours monthly and accelerating incident resolution by 30%",
         "Integrated AWS CloudWatch Insights and Event Bridge to detect anomalies via custom metrics and alerts, reducing mean time to recovery (MTTR) by 35%, improving system uptime to 99.95%, and cutting incident investigation by 45%",
-        "Architected secure batch data pipelines integrating AWS S3, Glue ETL, and Databricks Delta Lake—implementing end-to-end encryption, scaling to process 5 TB daily, reducing ETL runtime by 45%, and boosting analytics throughput by 60%",
+        "Developed secure batch data pipelines integrating AWS S3, Glue ETL, and Databricks Delta Lake — implementing end-to-end encryption, scaling to process 5 TB daily, reducing ETL runtime by 45%, and boosting analytics throughput by 60%",
         "Automated Terraform-driven GCP deployment pipelines using custom Terraform modules, integrated with Jenkins and GitLab CI to automate infrastructure provisioning and application delivery, reducing deployment durations by 55%, cutting configuration errors by 45%"
       ],
       technologies: ["AWS", "CloudFormation", "CDK", "CloudWatch", "Event Bridge", "S3", "Glue ETL", "Databricks", "Terraform", "GCP", "Jenkins", "GitLab CI", "Python"],
@@ -61,7 +80,7 @@ const Experience = () => {
         "Engineered CloudFormation, Service Catalog, and Control Tower IaC blueprints for multi-account AWS provisioning, reducing environment setup time by 40% and manual configuration errors by 70% across 500+ accounts",
         "Established migration of 150+ GCP workloads to AWS with Terraform and CloudFormation, architecting VPCs, IAM policies, and CI/CD pipelines, increasing application performance by 30%, reducing cloud spend by 20%, and enhancing resource utilization by 25%",
         "Deployed blue/green CI/CD pipelines using AWS tools; slashed deployment errors by 45% by integrating tooling with GitHub Actions and Parameter Store; boosted release frequency by 50%",
-        "Architected secure batch data pipelines integrating AWS S3, Glue ETL, and Databricks Delta Lake implementing end-to-end encryption, scaling to process 5 TB daily, reducing ETL runtime by 45%, and boosting analytics throughput by 60%"
+        "Upgraded secure batch data pipelines integrating AWS S3, Glue ETL, and Databricks Delta Lake implementing end-to-end encryption, scaling to process 5 TB daily, reducing ETL runtime by 45%, and boosting analytics throughput by 60%"
       ],
       technologies: ["AWS", "CloudFormation", "Service Catalog", "Control Tower", "Terraform", "VPC", "IAM", "CI/CD", "GitHub Actions", "S3", "Glue ETL", "Databricks", "GCP"],
       impact: "Reduced environment setup time by 40%, decreased cloud spend by 20%, and boosted release frequency by 50%"
@@ -80,51 +99,33 @@ const Experience = () => {
       ],
       technologies: ["Puppet", "Chef", "OpsWorks", "Terraform", "Ansible", "GitLab CI/CD", "Databricks", "CloudWatch", "Lambda", "CloudFormation", "CDK", "IAM", "AWS Config", "SOC 2", "GovCloud"],
       impact: "Boosted team productivity by 25%, accelerated release frequency by 50%, and achieved 100% SOC 2 and GovCloud compliance"
-    }
-  ];
-
-  const projects = [
-    {
-      title: "Azure Subscription Migration Automation",
-      description: "Enterprise-grade Temporal-orchestrated framework for automated Azure subscription migration with fault-tolerant workflows, Management Group provisioning, and Port developer portal integration",
-      technologies: ["Azure", "Temporal", "Python", "Azure SDK", "Port API", "Service Principals", "CI/CD"],
-      status: "Production",
-      impact: "Replaced manual multi-day subscription migrations with automated, auditable workflows across hundreds of enterprise subscriptions"
     },
     {
-      title: "Self-Healing Infrastructure Framework",
-      description: "AWS CloudFormation and CI/CD pipeline automation for automated error remediation and incident response",
-      technologies: ["AWS CloudFormation", "CDK", "CloudWatch", "Event Bridge", "Python", "CI/CD"],
-      status: "Production",
-      impact: "Decreased MTTR by 30% and saved over 200 hours monthly across production environments"
+      title: "AWS Cloud Infrastructure Engineer III",
+      company: "TEKSystems – Bank of America",
+      period: "Apr 2020 - Feb 2021",
+      location: "Remote",
+      description: "Streamlined cloud infrastructure workflows and automated routine tasks for enterprise-scale banking environments.",
+      achievements: [
+        "Streamlined cloud infrastructure workflows with Python and Bash scripts, eliminating 200+ manual hours annually and boosting team efficiency by 35%, while standardizing repeatable processes, centralizing logic in reusable modules, and enhancing operational consistency across environments",
+        "Automated 75% of routine GCP infrastructure tasks using Python and Bash scripts integrated with Cloud Scheduler and Cloud Functions, leveraging Infrastructure-as-Code best practices, increasing operational efficiency by 40%, saving 250+ developer hours annually",
+        "Implemented AWS Databricks workspace and notebook provisioning with Terraform and AWS SDK, leveraging modular IaC best practices, reducing provisioning time by 65%, enabling auto-scaling clusters, improving utilization by 30%, and supporting 300+ analyst deployments annually"
+      ],
+      technologies: ["Python", "Bash", "GCP", "Cloud Scheduler", "Cloud Functions", "AWS", "Databricks", "Terraform", "AWS SDK"],
+      impact: "Eliminated 200+ manual hours annually, saved 250+ developer hours, and supported 300+ analyst deployments"
     },
     {
-      title: "Multi-Account AWS Provisioning System",
-      description: "CloudFormation, Service Catalog, and Control Tower IaC blueprints for enterprise-scale multi-account provisioning",
-      technologies: ["AWS CloudFormation", "Service Catalog", "Control Tower", "Terraform", "IAM", "VPC"],
-      status: "Production",
-      impact: "Reduced environment setup time by 40% and manual configuration errors by 70% across 500+ accounts"
-    },
-    {
-      title: "GCP to AWS Migration Framework",
-      description: "Comprehensive migration solution for 150+ GCP workloads to AWS with automated provisioning and optimization",
-      technologies: ["Terraform", "CloudFormation", "VPC", "IAM", "CI/CD", "GitHub Actions", "GCP", "AWS"],
-      status: "Production",
-      impact: "Increased application performance by 30%, reduced cloud spend by 20%, and enhanced resource utilization by 25%"
-    },
-    {
-      title: "Secure Data Pipeline Architecture",
-      description: "End-to-end encrypted batch data processing pipeline with AWS S3, Glue ETL, and Databricks Delta Lake integration",
-      technologies: ["AWS S3", "Glue ETL", "Databricks", "Delta Lake", "CloudWatch", "Lambda", "Encryption"],
-      status: "Production",
-      impact: "Processes 5 TB daily, reduced ETL runtime by 45%, and boosted analytics throughput by 60%"
-    },
-    {
-      title: "Compliance Automation Platform",
-      description: "Automated security and compliance framework with RegScale, Netskope, and AWS Config integration",
-      technologies: ["RegScale", "Netskope", "AWS Config", "CloudWatch", "CloudTrail", "FISMA", "NIST", "DoD"],
-      status: "Production",
-      impact: "Achieved 100% SOC 2 and GovCloud compliance with 99.9% uptime and automated governance"
+      title: "Cloud Infrastructure Engineer",
+      company: "TEKsystems – Textron's Bell Flight",
+      period: "Feb 2019 - Aug 2019",
+      location: "Fort Worth, TX",
+      description: "Automated container provisioning and enhanced cloud performance and reliability for aerospace and defense infrastructure.",
+      achievements: [
+        "Automated container provisioning and deployments using Kubernetes, Docker, AWS ECS, Helm charts, and auto-scaling groups, boosting system uptime by 35%, improving horizontal scalability by 40%, and reducing resource contention by 25%",
+        "Enhanced cloud performance and reliability by 30% through Terraform IaC modules, rigorous code reviews, and redesigning AWS VPC layouts with optimized auto-scaling policies, cutting latency by 25% and eliminating single points of failure in production"
+      ],
+      technologies: ["Kubernetes", "Docker", "AWS ECS", "Helm", "Terraform", "AWS VPC", "Auto Scaling"],
+      impact: "Boosted system uptime by 35%, improved scalability by 40%, and cut latency by 25%"
     }
   ];
 
@@ -180,34 +181,6 @@ const Experience = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="projects-section">
-          <h2 className="section-title">Key Projects</h2>
-          <div className="projects-grid">
-            {projects.map((project, index) => (
-              <div key={index} className="project-card">
-                <div className="project-header">
-                  <h3 className="project-title">{project.title}</h3>
-                  <span className={`project-status ${project.status.toLowerCase()}`}>
-                    {project.status}
-                  </span>
-                </div>
-                
-                <p className="project-description">{project.description}</p>
-                
-                <div className="project-technologies">
-                  {project.technologies.map((tech, idx) => (
-                    <span key={idx} className="project-tech-tag">{tech}</span>
-                  ))}
-                </div>
-                
-                <div className="project-impact">
-                  <strong>Impact:</strong> {project.impact}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>

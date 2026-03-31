@@ -5,9 +5,9 @@ const Education = () => {
   const education = [
     {
       degree: 'Bachelor of Science in Computer Science',
-      institution: 'University of Texas at Dallas (UTD)',
+      institution: 'University of Texas at Dallas',
       period: '2017 - 2021',
-      location: 'Dallas, TX',
+      location: 'Richardson, TX',
       description: 'Focused on software engineering, algorithms, and system design with emphasis on cloud computing and distributed systems.',
       relevantCoursework: [
         'Data Structures and Algorithms',

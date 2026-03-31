@@ -59,18 +59,18 @@ const Contact = () => {
       description: 'Check out my code and projects'
     },
     {
-      icon: '🐦',
-      title: 'X',
-      value: '@BIGBRODIE94',
-      link: 'https://x.com/bigbrodie94',
-      description: 'Follow me for tech updates'
+      icon: '📱',
+      title: 'Phone',
+      value: '+1 (214) 518-1366',
+      link: 'tel:+12145181366',
+      description: 'Call or text anytime'
     }
   ];
 
   const availability = {
     status: 'Available for opportunities',
     responseTime: 'Within 24 hours',
-    timezone: 'EST (UTC-5)',
+    timezone: 'EST (UTC-5) — New York, NY',
     preferredContact: 'Email or LinkedIn'
   };
 

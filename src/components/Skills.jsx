@@ -9,60 +9,80 @@ const Skills = () => {
       title: 'Cloud Platforms',
       icon: '☁️',
       skills: [
-        { name: 'AWS', level: 95, description: 'EC2, S3, ECS, EKS, Lambda, CloudWatch, Kinesis, IAM, VPC, CloudFormation' },
-        { name: 'Azure', level: 90, description: 'Management Groups, Subscription Landing Zones, Azure SDK, Service Principals, Azure CLI' },
-        { name: 'AWS GovCloud', level: 88, description: 'Government cloud compliance, FedRAMP, DoD requirements, secure deployments' },
-        { name: 'Multi-Cloud Architecture', level: 92, description: 'Cross-cloud IAM, Organizations, centralized logging, security frameworks, Temporal orchestration' }
+        { name: 'AWS Cloud', level: 95, description: 'EC2, S3, ECS, EKS, Lambda, CloudWatch, Kinesis, IAM, VPC, CloudFormation, CDK, GovCloud, Bedrock, SageMaker' },
+        { name: 'Azure Cloud', level: 92, description: 'Management Groups, Subscription Landing Zones, Azure SDK, Azure REST APIs, Entra ID, Key Vault, Cosmos DB, Resource Graph API, Azure DevOps, Azure Policy' },
+        { name: 'Google Cloud Platform', level: 85, description: 'App Engine, Data Plex, DataFlow, Gemini, GKE, Cloud Scheduler, Cloud Functions' },
+        { name: 'Multi-Cloud Architecture', level: 90, description: 'Cross-cloud IAM, Organizations, centralized logging, security frameworks, Temporal orchestration' }
       ]
     },
     containers: {
-      title: 'DevOps Tools',
-      icon: '🔧',
+      title: 'Containers & Orchestration',
+      icon: '🐳',
       skills: [
-        { name: 'Docker & Kubernetes', level: 95, description: 'Containerization, EKS, Helm charts, workload orchestration, RBAC' },
-        { name: 'Terraform & Ansible', level: 90, description: 'Infrastructure automation, configuration management, multi-cloud provisioning' },
-        { name: 'CI/CD (Jenkins, GitLab)', level: 88, description: 'Pipeline automation, GitOps workflows, automated testing, deployment strategies' },
-        { name: 'GitOps & ArgoCD', level: 92, description: 'Automated deployments, Git-based workflows, continuous delivery' }
+        { name: 'Docker & Kubernetes', level: 95, description: 'Containerization, EKS, AKS, GKE, Helm charts, workload orchestration, RBAC' },
+        { name: 'Container Platforms', level: 88, description: 'Tanzu, Rancher, Nomad, ECS, auto-scaling groups' },
+        { name: 'Chaos Engineering', level: 82, description: 'Chaos Mesh, fault injection, resilience testing, cascading failure simulation' },
+        { name: 'Observability Stack', level: 90, description: 'Prometheus, Grafana, Jaeger, ClickHouse, Datadog, Dynatrace, Kibana, Splunk, ELK Stack' }
       ]
     },
-    infrastructure: {
-      title: 'Security & Compliance',
-      icon: '🛡️',
+    iac: {
+      title: 'Infrastructure as Code',
+      icon: '🏗️',
       skills: [
-        { name: 'IAM & Security Groups', level: 92, description: 'Identity management, cross-account policies, network security, access controls' },
-        { name: 'CloudTrail & CloudWatch', level: 90, description: 'Audit logging, monitoring, alerting, centralized logging architecture' },
-        { name: 'Wiz Security Integration', level: 88, description: 'Automated security scanning, vulnerability management, compliance reporting' },
-        { name: 'FedRAMP & DoD Compliance', level: 85, description: 'Government security requirements, compliance frameworks, audit preparation' }
+        { name: 'Terraform', level: 92, description: 'Multi-cloud provisioning, modules, state management, custom providers' },
+        { name: 'AWS CloudFormation & CDK', level: 90, description: 'Nested stacks, custom resources, Service Catalog, Control Tower, SAM' },
+        { name: 'Configuration Management', level: 88, description: 'Ansible, Puppet, Chef, OpsWorks, configuration automation' },
+        { name: 'Azure ARM & Policy', level: 85, description: 'ARM templates, Azure Policy Exemptions, Management Group hierarchy, RBAC provisioning' }
       ]
     },
     devops: {
       title: 'DevOps & CI/CD',
       icon: '🔄',
       skills: [
+        { name: 'CI/CD Pipelines', level: 92, description: 'Jenkins, GitLab CI, GitHub Actions, AWS CodePipeline, CodeBuild, CodeDeploy, Azure DevOps' },
         { name: 'GitOps', level: 90, description: 'ArgoCD, Flux, automated deployments, Git-based workflows' },
-        { name: 'CI/CD Pipelines', level: 88, description: 'GitHub Actions, Jenkins, GitLab CI, automated testing' },
-        { name: 'Monitoring', level: 85, description: 'Prometheus, Grafana, CloudWatch, ELK Stack, alerting' },
-        { name: 'Security', level: 87, description: 'SAST/DAST, vulnerability scanning, compliance automation' }
+        { name: 'Workflow Orchestration', level: 88, description: 'Temporal, event-driven architectures, EventBridge, batch parallel processing' },
+        { name: 'Version Control & Collaboration', level: 92, description: 'Git, GitLab, Bitbucket, Jira, SDLC' }
+      ]
+    },
+    security: {
+      title: 'Security & Compliance',
+      icon: '🛡️',
+      skills: [
+        { name: 'Cloud Security', level: 92, description: 'IAM, IAM Identity Center, Wiz Security, AWS Inspector, Security Groups, Service Principals' },
+        { name: 'Compliance Frameworks', level: 90, description: 'FISMA, NIST, DoD, SOC 2, FedRAMP, GovCloud, Azure Policy compliance' },
+        { name: 'Monitoring & Audit', level: 88, description: 'CloudTrail, CloudWatch, RegScale, Netskope, audit logging, centralized logging' },
+        { name: 'ITSM Integration', level: 85, description: 'ServiceNow, RITM ticket automation, governance review, compliance reporting' }
       ]
     },
     programming: {
       title: 'Programming',
       icon: '💻',
       skills: [
-        { name: 'Python & Bash', level: 90, description: 'Automation scripts, Lambda functions, system administration, deployment automation' },
-        { name: 'JavaScript/Node.js', level: 85, description: 'React development, serverless functions, API integration, web applications' },
-        { name: 'Infrastructure as Code', level: 92, description: 'Terraform, CloudFormation, YAML, JSON, configuration management' },
-        { name: 'Shell Scripting', level: 88, description: 'Bash scripting, automation, system administration, deployment pipelines' }
+        { name: 'Python & Bash', level: 92, description: 'Automation scripts, Lambda functions, Azure SDK automation, system administration, PySpark, TensorFlow' },
+        { name: 'JavaScript & TypeScript', level: 88, description: 'ReactJS, AngularJS, Node.js, Vue, Webpack, serverless functions' },
+        { name: 'Systems Languages', level: 80, description: 'C, C#, C++, Java, Go, Golang, .NET, Spring' },
+        { name: 'Data & Query Languages', level: 85, description: 'SQL, OracleSQL, KQL (Kusto), GraphQL, YAML, JSON' }
       ]
     },
-    databases: {
-      title: 'Databases & Storage',
+    data: {
+      title: 'Data & AI',
       icon: '🗄️',
       skills: [
-        { name: 'Relational DBs', level: 85, description: 'PostgreSQL, MySQL, RDS, Aurora, performance optimization' },
-        { name: 'NoSQL', level: 80, description: 'DynamoDB, MongoDB, Redis, data modeling, scaling strategies' },
-        { name: 'Data Storage', level: 90, description: 'S3, EBS, EFS, data lifecycle management, backup strategies' },
-        { name: 'Data Processing', level: 75, description: 'Kinesis, Glue, Athena, EMR, data pipelines' }
+        { name: 'Data Processing', level: 88, description: 'Databricks, Glue ETL, Athena, EMR, Kinesis, Kafka, Apache Spark, Flink' },
+        { name: 'Databases', level: 85, description: 'PostgreSQL, MySQL, RDS, Aurora, DynamoDB, MongoDB, Redis, Cosmos DB, ClickHouse' },
+        { name: 'Data Storage', level: 90, description: 'S3, EBS, EFS, Data Lake, Hadoop, Delta Lake, FSx for Lustre' },
+        { name: 'AI & ML', level: 78, description: 'AWS Bedrock, SageMaker, LLM pipelines, TensorFlow, Anaconda, AI Pipelines' }
+      ]
+    },
+    tools: {
+      title: 'Tools & Platforms',
+      icon: '🔧',
+      skills: [
+        { name: 'CLI Tools', level: 92, description: 'AWS CLI, Azure CLI, CFN CLI, EB CLI, SAM CLI' },
+        { name: 'Development Tools', level: 90, description: 'Cursor, Windsurf, Postman, Cypress, Heroku, Figma, Excel' },
+        { name: 'Operating Systems', level: 88, description: 'Unix, Linux, CentOS, Kali Linux, Windows, MacOS, VirtualBox, VMWare' },
+        { name: 'Messaging & CDN', level: 82, description: 'RabbitMQ, Kafka, CloudFront, CDN, NGINX, ElasticSearch' }
       ]
     }
   };
@@ -117,7 +137,6 @@ const Skills = () => {
       </div>
 
       <div className="skills-content">
-        {/* Skills Section */}
         <div className="skills-section">
           <h2 className="section-title">Technical Skills</h2>
           
@@ -166,7 +185,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Certifications Section */}
         <div className="certifications-section">
           <h2 className="section-title">Professional Certifications</h2>
           
@@ -201,7 +219,6 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Additional Skills */}
         <div className="additional-skills">
           <h2 className="section-title">Additional Expertise</h2>
           
@@ -209,33 +226,33 @@ const Skills = () => {
             <div className="expertise-category">
               <h4>Security & Compliance</h4>
               <ul>
-                <li>FedRAMP & DoD Compliance</li>
-                <li>Wiz Security Integration</li>
-                <li>Cross-Account IAM Policies</li>
-                <li>CloudTrail & Audit Logging</li>
-                <li>Security Group Management</li>
+                <li>FISMA, NIST, DoD, SOC 2, FedRAMP</li>
+                <li>Wiz Security & AWS Inspector</li>
+                <li>Azure Policy & RBAC</li>
+                <li>ServiceNow ITSM Integration</li>
+                <li>IAM & IAM Identity Center</li>
               </ul>
             </div>
             
             <div className="expertise-category">
               <h4>Cloud Architecture</h4>
               <ul>
-                <li>Multi-Account AWS Architecture</li>
-                <li>Centralized Logging Solutions</li>
-                <li>EKS & Container Orchestration</li>
-                <li>CloudWatch & Monitoring</li>
-                <li>Kinesis Data Processing</li>
+                <li>Multi-Cloud (AWS, Azure, GCP)</li>
+                <li>Temporal Workflow Orchestration</li>
+                <li>Landing Zone Accelerator (LZA)</li>
+                <li>HPC (Parallel Cluster, Slurm, FSx)</li>
+                <li>Serverless (Lambda, SAM, EventBridge)</li>
               </ul>
             </div>
             
             <div className="expertise-category">
-              <h4>Automation & DevOps</h4>
+              <h4>Data & Observability</h4>
               <ul>
-                <li>Infrastructure as Code (Terraform)</li>
-                <li>GitOps & ArgoCD</li>
-                <li>Automated Deployment Pipelines</li>
-                <li>Shell Scripting & Automation</li>
-                <li>Configuration Management</li>
+                <li>Databricks, Glue ETL, Delta Lake</li>
+                <li>Prometheus, Grafana, Jaeger</li>
+                <li>ClickHouse, Datadog, Dynatrace</li>
+                <li>Kafka, Spark, Flink</li>
+                <li>AI/ML Pipelines (Bedrock, SageMaker)</li>
               </ul>
             </div>
           </div>
