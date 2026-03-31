@@ -57,9 +57,11 @@ const Resume = () => {
             </div>
             <h4>Sepal AI</h4>
             <ul className="exp-list">
-              <li>Architected observability evaluation infrastructure (ClickHouse, Grafana, Docker-in-Docker) with 3-tier grading system processing 200+ problem definitions across 27 real-world incidents with 100% deterministic accuracy</li>
-              <li>Engineered AIOps observability infrastructure generating 36.1M-row dataset across 72-hour simulation of 18-microservice application (Kubernetes, Helm, Chaos Mesh, Prometheus, Jaeger, MongoDB)</li>
-              <li>Automated end-to-end evaluation workflow using TAIGA framework, Jinja2 templates, and MCP protocol with resource constraints (4 vCPU + 16 GiB) for scalable DevOps AI testing</li>
+              <li>Architected observability evaluation infrastructure (ClickHouse, Grafana, Docker-in-Docker) with 3-tier grading system processing 200+ problem definitions across 27 real-world incidents; automated TAIGA/Jinja2/MCP workflow testing 7 incident types (network latency, JVM OOM, CPU saturation, cascading failures) with 100% deterministic accuracy and semantic similarity validation</li>
+              <li>Implemented intelligent grading system with 3-tier criterion validation (deterministic matching at 100% accuracy, semantic similarity with 0.7 threshold, temporal tolerance of ±60 seconds) processing timestamp, component IDs, and root cause descriptions across 20+ problem definitions</li>
+              <li>Automated end-to-end evaluation workflow using TAIGA framework, Jinja2 templates, and MCP protocol, orchestrating Docker images with custom startup commands and resource constraints (4 vCPU + 16 GiB) for scalable DevOps AI testing</li>
+              <li>Delivered comprehensive RCA dataset covering 7 incident types (network latency, memory exhaustion, JVM OOM, CPU saturation, I/O bottlenecks, connection pool limits, cascading failures) with quantifiable metrics and chronological timeline analysis</li>
+              <li>Engineered AIOps observability infrastructure generating 36.1M-row dataset across 72-hour simulation of 18-microservice application (Kubernetes, Helm, Chaos Mesh, Prometheus, Jaeger, MongoDB); implemented cascading failures, resource contention, and automated fault injection (wrk2) with 15-second metric granularity across logs, traces, and metrics</li>
             </ul>
           </div>
 
@@ -70,11 +72,14 @@ const Resume = () => {
             </div>
             <h4>Strategic Business Systems</h4>
             <ul className="exp-list">
-              <li>Built GitOps-driven CI/CD pipelines (AWS CodePipeline, CodeBuild, CodeDeploy, ArgoCD, Flux) with integrated Wiz security scanning, reducing deployment time by 75%</li>
-              <li>Established cloud security & compliance frameworks (CloudWatch, CloudTrail, RegScale, Netskope, Wiz), achieving 99.9% uptime and FISMA, NIST, DoD compliance</li>
-              <li>Deployed AWS Parallel Cluster with Terraform and FSx for Lustre/S3, cutting HPC setup time by 60% across 10+ research pipelines</li>
-              <li>Automated Slurm job scheduling with Python/Bash, reducing manual management by 70% and boosting cluster utilization by 35%</li>
-              <li>Transformed Landing Zone Accelerator (LZA) in test environments, reducing configuration errors by 30%</li>
+              <li>Built and maintained GitOps-driven CI/CD pipelines (AWS CodePipeline, CodeBuild, CodeDeploy, ArgoCD, Flux) with integrated Wiz security scanning, reducing deployment time by 75% and ensuring automated compliance validation</li>
+              <li>Established cloud security & compliance frameworks (CloudWatch, CloudTrail, RegScale, Netskope, Wiz), achieving 99.9% uptime and adherence to FISMA, NIST, and DoD standards</li>
+              <li>Deployed AWS Parallel Cluster with Terraform and FSx for Lustre/S3, cutting HPC setup time by 60% across 10+ research pipelines, ensuring reproducible clusters via IaC</li>
+              <li>Automated Slurm job scheduling with Python/Bash, reducing manual management by 70%, boosting cluster utilization by 35%, and integrating performance metrics into CloudWatch/Grafana dashboards for observability</li>
+              <li>Restructured and automated 10+ VDMS/VDSS security playbooks, enabling rapid incident response and remediation across all cloud environments; playbooks were used by 15+ cloud engineers</li>
+              <li>Transformed Landing Zone Accelerator (LZA) in test environments, enhancing cloud security automation, reducing configuration errors by 30%, and improving scalability through advanced configuration patterns</li>
+              <li>Leveraged serverless architectures (Lambda, SAM, and EventBridge) to automate compliance workflows and monitoring, reducing manual audit tasks by 40%</li>
+              <li>Designed multi-cloud integration pipelines (AWS + GCP) with Terraform and Jenkins, reducing deployment durations by 55% and cutting configuration errors by 45%</li>
             </ul>
           </div>
 
@@ -100,9 +105,10 @@ const Resume = () => {
             </div>
             <h4>Amazon Web Services</h4>
             <ul className="exp-list">
-              <li>Engineered CloudFormation, Service Catalog, and Control Tower IaC blueprints for multi-account provisioning, reducing setup time by 40% across 500+ accounts</li>
-              <li>Migrated 150+ GCP workloads to AWS with Terraform, increasing performance by 30% and reducing cloud spend by 20%</li>
-              <li>Deployed blue/green CI/CD pipelines, slashing deployment errors by 45% and boosting release frequency by 50%</li>
+              <li>Engineered CloudFormation, Service Catalog, and Control Tower IaC blueprints for multi-account AWS provisioning, reducing environment setup time by 40% and manual configuration errors by 70% across 500+ accounts</li>
+              <li>Established migration of 150+ GCP workloads to AWS with Terraform and CloudFormation, architecting VPCs, IAM policies, and CI/CD pipelines, increasing application performance by 30%, reducing cloud spend by 20%, and enhancing resource utilization by 25%</li>
+              <li>Deployed blue/green CI/CD pipelines using AWS tools; slashed deployment errors by 45% by integrating tooling with GitHub Actions and Parameter Store; boosted release frequency by 50%</li>
+              <li>Upgraded secure batch data pipelines integrating AWS S3, Glue ETL, and Databricks Delta Lake implementing end-to-end encryption, scaling to process 5 TB daily, reducing ETL runtime by 45%, and boosting analytics throughput by 60%</li>
             </ul>
           </div>
 
@@ -113,9 +119,10 @@ const Resume = () => {
             </div>
             <h4>TEKSystems – Arctic IT</h4>
             <ul className="exp-list">
-              <li>Orchestrated configuration management automation via Puppet, Chef, and OpsWorks to standardize 80+ operational tasks</li>
-              <li>Integrated Terraform and Ansible into GitLab CI/CD pipelines, eliminating 40% of manual deployment steps</li>
-              <li>Achieved 100% SOC 2 and GovCloud compliance with IAM least-privilege policies and AWS Config guardrails</li>
+              <li>Orchestrated configuration management automation via Puppet, Chef, and OpsWorks to standardize 80+ operational tasks, boosting team productivity by 25%, reducing configuration errors by 30%, and cutting incident triage time by 40%</li>
+              <li>Integrated Terraform and Ansible automation into GitLab CI/CD pipelines, eliminating 40% of manual deployment steps, accelerating release frequency by 50%, ensuring consistent environment provisioning across staging and production, and boosting developer efficiency by 35%</li>
+              <li>Collaborated with data engineering teams to integrate Databricks job monitoring into AWS CloudWatch with custom alarms and Lambda notifications, reducing failure detection time by 80%, improving pipeline reliability to 99.8%, and automating incident remediation workflows</li>
+              <li>Implemented AWS CloudFormation and CDK secure deployment pipelines with integrated IAM least-privilege policies and AWS Config guardrails, achieving 100% SOC 2 and GovCloud compliance, reducing audit remediation tasks by 80% and compliance validation time by 60%</li>
             </ul>
           </div>
 
