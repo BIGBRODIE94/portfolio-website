@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import './Introduction.css'
 import { FaAws, FaDocker, FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'
-import { SiKubernetes, SiTerraform, SiMicrosoftazure } from 'react-icons/si'
+import { SiKubernetes, SiTerraform } from 'react-icons/si'
+import { VscAzure } from 'react-icons/vsc'
 
 const Introduction = () => {
   const [text, setText] = useState('')
@@ -48,7 +49,7 @@ const Introduction = () => {
                 <span>AWS</span>
               </a>
               <a href="https://azure.microsoft.com/" target="_blank" rel="noopener noreferrer" className="tech-icon azure">
-                <SiMicrosoftazure />
+                <VscAzure />
                 <span>Azure</span>
               </a>
               <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer" className="tech-icon docker">
