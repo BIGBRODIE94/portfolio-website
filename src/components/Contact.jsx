@@ -70,7 +70,7 @@ const Contact = () => {
   const availability = {
     status: 'Available for opportunities',
     responseTime: 'Within 24 hours',
-    timezone: 'EST (UTC-5) — New York, NY',
+    timezone: 'EST (UTC-5) — Greater Philadelphia Area',
     preferredContact: 'Email or LinkedIn'
   };
 

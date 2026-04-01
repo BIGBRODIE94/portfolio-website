@@ -77,7 +77,7 @@ const Introduction = () => {
                 <span className={`cursor ${showCursor ? 'visible' : ''}`}>|</span>
               </h2>
             </div>
-            <p className="location-info">New York, NY</p>
+            <p className="location-info">Greater Philadelphia Area</p>
           </div>
 
           <div className="intro-description">
