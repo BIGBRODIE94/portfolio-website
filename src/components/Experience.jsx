@@ -22,9 +22,9 @@ const Experience = () => {
     {
       title: "Synthetic Data Engineer",
       company: "Sepal AI",
-      period: "Dec 2025 - Present",
+      period: "Dec 2025 - Feb 2026",
       location: "Remote",
-      description: "Architecting observability evaluation infrastructure and AIOps datasets for AI-driven incident response testing and root cause analysis.",
+      description: "Architected observability evaluation infrastructure and AIOps datasets for AI-driven incident response testing and root cause analysis.",
       achievements: [
         "Architected observability evaluation infrastructure (ClickHouse, Grafana, Docker-in-Docker) with 3-tier grading system processing 200+ problem definitions across 27 real-world incidents; automated TAIGA/Jinja2/MCP workflow testing 7 incident types (network latency, JVM OOM, CPU saturation, cascading failures) with 100% deterministic accuracy and semantic similarity validation",
         "Implemented intelligent grading system with 3-tier criterion validation (deterministic matching at 100% accuracy, semantic similarity with 0.7 threshold, temporal tolerance of ±60 seconds) processing timestamp, component IDs, and root cause descriptions across 20+ problem definitions",

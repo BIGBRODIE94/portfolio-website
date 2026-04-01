@@ -53,7 +53,7 @@ const Resume = () => {
           <div className="experience-item">
             <div className="exp-header">
               <h3>Synthetic Data Engineer</h3>
-              <span className="date">Dec 2025 - Present</span>
+              <span className="date">Dec 2025 - Feb 2026</span>
             </div>
             <h4>Sepal AI</h4>
             <ul className="exp-list">
